@@ -1,0 +1,163 @@
+// memanggil component dari luar supaya lebih mudah
+@import "./color";
+@import "./typo";
+@import "./buttons";
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.navbar-tp{
+    padding: 15px;
+
+    .navbar-brand{
+        color: $green;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar-brandspace{
+        color: $yellow;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .navbar-nav{
+        li{
+            padding-left: 55px;
+        }
+        .active{
+            // important untuk memberitahu wanra atau setting ini penting dan tidak tertimpa yang lainnya
+            color: $green !important;
+            font-size: 19px !important;
+            font-weight: map-get($font-weight, medium) !important;
+        }
+            
+        .nav-link{
+            color: $darkgreen;
+            font-size: 18px;
+            font-weight: map-get($font-weight, regular)
+        }
+    }
+}
+
+//memberikan jarak kesemua komponen dengan class copywriting
+.copywriting{
+    padding: 20px;
+    // bisa kasih padding disini biar lebih kekiri atau kanan
+}
+
+//section header & menjadikan heading ke semua class header dan description
+.header{
+    font-weight: map-get($font-weight, semibold );
+    color: $green;
+    font-size: 46px;
+    line-height: 60px;
+} 
+.description{
+    font-weight: map-get($font-weight, light);
+    color: $darkgreen;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+//section sales
+.sales{
+    margin-top: 80px;
+    .heading-image{
+        text-align: center;
+        .image-head{
+            height: 300px;
+            image-resolution: 300px;
+        } 
+    }
+}
+
+//section pricing
+.pricing{
+    margin-top: 80px;
+    background: $greenlight;
+    padding: 70px 0 70px 0;
+
+    .master-card{
+        padding: 30px;
+        border-radius: 22px;
+        .name{
+            font-size: 18px;
+            font-weight: map-get($font-weight, medium );
+        }
+        .price{
+            font-size: 40px;
+            font-weight: map-get($font-weight, semibold );
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .support{
+            font-size: 16px;
+            font-weight: map-get($font-weight, sregular );
+            margin-bottom: 40px;
+        }
+        .item-benefit{
+            margin-bottom: 20px;
+            img{
+                float: left;
+                margin-right: 8px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: map-get($font-weight, medium );
+                margin-top: 8px;
+            }
+        }
+        .btn{
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+    .basic-card{
+        @extend .master-card;
+        background: $white;
+        .name{
+            color: $green;
+        }
+        .price{
+            color: $darkgreen;
+        }
+        .support{
+            color: $green;
+        }
+        .item-benefit{
+            p{
+                color: $green;
+            }
+        }
+    }
+
+    .most-card{
+        @extend .master-card;
+        background: $green ; 
+        .btn-primary{
+            background: $yellow !important;
+        }
+        .name{
+            color: $white;
+        }
+        .price{
+            color: $yellow;
+        }
+        .support{
+            color: $white;
+        }
+        .item-benefit{
+            p{
+                color: $green;
+            }
+        }
+    }
+    
+}
+
+
+

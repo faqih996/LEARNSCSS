@@ -1,0 +1,22 @@
+// karna bttuon memiliki typograhy maka perlu dipanggil juga kedalamnya
+@import "./typo";
+
+.btn-master{
+    padding: 15px 26px 15px 26px;
+    border-radius: 10px;
+    font-weight: map-get($font-weight, semibold);
+    border: 0px
+}
+
+.btn-primary{
+    @extend .btn-master;
+    color: $white;
+    background-color: $green;
+    border: 0px;
+}
+
+.btn-secondary{
+    @extend .btn-master;
+    color: $green;
+    background-color: $yellow;
+}
