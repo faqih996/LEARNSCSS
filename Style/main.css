@@ -87,47 +87,47 @@ body {
 .pricing {
   margin-top: 80px;
   background: #f8f188;
-  padding: 70px;
+  padding: 70px 0 70px 0;
 }
 
-.pricing .master-card, .pricing .basic-card {
+.pricing .master-card, .pricing .basic-card, .pricing .most-card {
   padding: 30px;
   border-radius: 22px;
 }
 
-.pricing .master-card .name, .pricing .basic-card .name {
+.pricing .master-card .name, .pricing .basic-card .name, .pricing .most-card .name {
   font-size: 18px;
   font-weight: 500;
 }
 
-.pricing .master-card .price, .pricing .basic-card .price {
+.pricing .master-card .price, .pricing .basic-card .price, .pricing .most-card .price {
   font-size: 40px;
   font-weight: 600;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-.pricing .master-card .support, .pricing .basic-card .support {
+.pricing .master-card .support, .pricing .basic-card .support, .pricing .most-card .support {
   font-size: 16px;
   margin-bottom: 40px;
 }
 
-.pricing .master-card .item-benefit, .pricing .basic-card .item-benefit {
+.pricing .master-card .item-benefit, .pricing .basic-card .item-benefit, .pricing .most-card .item-benefit {
   margin-bottom: 20px;
 }
 
-.pricing .master-card .item-benefit img, .pricing .basic-card .item-benefit img {
+.pricing .master-card .item-benefit img, .pricing .basic-card .item-benefit img, .pricing .most-card .item-benefit img {
   float: left;
   margin-right: 8px;
 }
 
-.pricing .master-card .item-benefit p, .pricing .basic-card .item-benefit p {
+.pricing .master-card .item-benefit p, .pricing .basic-card .item-benefit p, .pricing .most-card .item-benefit p {
   font-size: 16px;
   font-weight: 500;
   margin-top: 8px;
 }
 
-.pricing .master-card .btn, .pricing .basic-card .btn {
+.pricing .master-card .btn, .pricing .basic-card .btn, .pricing .most-card .btn {
   margin-top: 20px;
   width: 100%;
 }
@@ -149,6 +149,30 @@ body {
 }
 
 .pricing .basic-card .item-benefit p {
+  color: #0c8d07;
+}
+
+.pricing .most-card {
+  background: #0c8d07;
+}
+
+.pricing .most-card .btn-primary {
+  background: #f5ca09 !important;
+}
+
+.pricing .most-card .name {
+  color: #ffff;
+}
+
+.pricing .most-card .price {
+  color: #f5ca09;
+}
+
+.pricing .most-card .support {
+  color: #ffff;
+}
+
+.pricing .most-card .item-benefit p {
   color: #0c8d07;
 }
 /*# sourceMappingURL=main.css.map */
